@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebPage</title>
-</head>
-<body>
 
     <style>
     
@@ -15,10 +13,9 @@
             padding: 10px 0;
         }
 
-        a {
+        #inner_link {
             color: green;
-            text-decoration: none;
-           
+            text-decoration: none;  
         }
 
         #paragraph{
@@ -31,15 +28,20 @@
 
     </style>
 
+</head>
+<body>
+
+
     <div>
         <div style="background-color: green; padding: 30px; text-align: center;">
             <h1 style="color: white;">My First WebPage</h1>
         </div>
+        <br>
 
         <div>
-            <a href="#web-contents">Webpage Contents</a>
-            <a href="#information-table">Information</a>
-            <a href="#contact-form">Contact Form</a>
+            <a id="inner_link" href="#web-contents">Webpage Contents</a>
+            <a id="inner_link" href="#information-table">Information</a>
+            <a id="inner_link" href="#contact-form">Contact Form</a>
         </div>
 
         <img src="./Photo/sunset.jpeg" alt="Sunset">
@@ -48,10 +50,10 @@
         <p>This is a sample paragraph describing the content of te webpage. It explains <br> the the purpose of the page, and provides some basic information about what <br> users can expect to find</p>
        </div>
 
-        <a href="https://www.techyjaunt.com/" target="_blank">Visit TechyJaunt</a>
+        <a id="link" href="https://www.techyjaunt.com/" target="_blank">Visit TechyJaunt</a>
 
         <div id="web-contents">
-            <h1>Webpage Contents</h1>
+            <h3>Webpage Contents</h3>
             <ul>
                 <li>Introduction</li>
                 <li>Table of Information</li>
@@ -60,7 +62,7 @@
         </div>
 
         <div id="information-table">
-            <h1>Information Table</h1>
+            <h3>Information Table</h3>
 
             <table border="1" cellpadding="5" cellspacing="0">
                 <thead>
@@ -96,7 +98,7 @@
         </div>
 
         <div id="contact-form">
-            <h1>Contact Form</h1>
+            <h3>Contact Form</h3>
 
             <form>
                 <div>
